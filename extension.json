@@ -1,11 +1,24 @@
 {
-  "name": "BhikitiaAIOversight",
-  "version": "1.0",
-  "author": "Bhikitia",
-  "description": "AI-generated oversight infobox for Bhikitia",
-  "type": "parserhook",
-  "Hooks": {
-    "ParserFirstCallInit": "BhikitiaAIOversight::onParserInit"
-  },
-  "manifest_version": 2
+    "name": "BhikitiaAIOversight",
+    "version": "1.0.0",
+    "author": "Parvej Husen Talukder",
+    "url": "https://github.com/parvejtalukder/BhikitiaAIOversight",
+    "description": "BhikitiaAIOversight is an AI-powered oversight infobox for Bhikitia articles using a JavaScript NLP engine",
+    "type": "parserhook",
+    "AutoloadClasses": {
+        "BhikitiaAIOversightRenderer": "includes/BhikitiaAIOversightRenderer.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": "BhikitiaAIOversightRenderer::onParserInit"
+    },
+    "ResourceModules": {
+        "ext.bhikitiaaioversight.styles": {
+            "styles": "modules/styles.css"
+        }
+    },
+    "manifest_version": 2,
+    "license-name": "GPL-2.0-or-later",
+    "messagesDirs": {
+        "messages": "i18n"
+    }
 }
