@@ -1,0 +1,11 @@
+{
+  "name": "BhikitiaAIOversight",
+  "version": "1.0",
+  "author": "Bhikitia",
+  "description": "AI-generated oversight infobox for Bhikitia",
+  "type": "parserhook",
+  "Hooks": {
+    "ParserFirstCallInit": "BhikitiaAIOversight::onParserInit"
+  },
+  "manifest_version": 2
+}
